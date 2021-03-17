@@ -1,0 +1,54 @@
+plugins {
+    id 'java'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.helloworld.HelloWorldG'
+        )
+    }
+    from {
+        configurations.runtimeClasspath.findAll {!it.path.endsWith(".pom")}.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+
+task fatJar(type: Jar) {
+    manifest.from jar.manifest
+    classifier = 'all'
+    from {
+        configurations.runtime.collect { it.isDirectory() ? it : zipTree(it) }
+    } {
+        exclude "META-INF/*.SF"
+        exclude "META-INF/*.DSA"
+        exclude "META-INF/*.RSA"
+    }
+    with jar
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven {
+        url "https://hub.spigotmc.org/nexus/content/repositories/snapshots"
+    }
+
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    compileOnly "org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT"
+    
+    implementation "net.dv8tion:JDA:4.2.0_168"
+
+
+}
+
+test {
+    useJUnitPlatform()
+}

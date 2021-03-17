@@ -1,0 +1,5 @@
+name: HelloWorld
+version: 1.0.0
+author: Jac
+main: com.helloworld.HelloWorldG
+api-version: 1.14
