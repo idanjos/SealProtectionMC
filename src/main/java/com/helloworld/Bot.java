@@ -1,5 +1,5 @@
 package com.helloworld;
-
+/*
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.entities.Message;
@@ -33,8 +33,8 @@ public class Bot extends ListenerAdapter {
         {
             MessageChannel channel = event.getChannel();
             long time = System.currentTimeMillis();
-            channel.sendMessage("Pong!") /* => RestAction<Message> */
-                    .queue(response /* => Message */ -> {
+            channel.sendMessage("Pong!")
+                    .queue(response -> {
                         response.editMessageFormat("Pong: %d ms", System.currentTimeMillis() - time).queue();
                     });
         }
@@ -57,3 +57,4 @@ public class Bot extends ListenerAdapter {
 
     }
 }
+*/

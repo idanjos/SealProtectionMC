@@ -1,0 +1,3 @@
+./gradlew build
+rm ../Server/plugins/HelloWorldG-1.0-SNAPSHOT.jar
+cp build/libs/HelloWorldG-1.0-SNAPSHOT.jar ../Server/plugins/

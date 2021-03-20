@@ -1,4 +1,22 @@
-com/helloworld/Bot.java
- com.helloworld.Bot
+com/helloworld/classes/SP_Plot.java
+ com.helloworld.classes.SP_Plot
+com/helloworld/commands/PlotMaker.java
+ com.helloworld.commands.PlotMaker
+com/helloworld/classes/SP_PlotMaker.java
+ com.helloworld.classes.SP_PlotMaker
+com/helloworld/classes/SP_Chest.java
+ com.helloworld.classes.SP_Chest
+com/helloworld/classes/SP_Location.java
+ com.helloworld.classes.SP_Location
+com/helloworld/classes/SP_Player.java
+ com.helloworld.classes.SP_Player
+com/helloworld/commands/DisownPlot.java
+ com.helloworld.commands.DisownPlot
 com/helloworld/HelloWorldG.java
  com.helloworld.HelloWorldG
+com/helloworld/PlotMaker.java
+ com.helloworld.PlotMaker
+com/helloworld/SealProtector.java
+ com.helloworld.SealProtector
+com/helloworld/commands/PlotReset.java
+ com.helloworld.commands.PlotReset

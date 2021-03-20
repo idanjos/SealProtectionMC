@@ -3,3 +3,17 @@ version: 1.0.0
 author: Jac
 main: com.helloworld.HelloWorldG
 api-version: 1.14
+
+# Replace "kit" with the name of your command.
+commands:
+  plotmaker:
+    description: Create plot with a hoe
+    usage: /plotmaker
+
+  plotreset:
+    description: Reset plot maker
+    usage: /plotreset
+
+  disownplots:
+    description: Disown all plots
+    usage: /disownplots
